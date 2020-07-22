@@ -1,1 +1,14 @@
-<p>form works!</p>
+<form>
+    <mat-form-field>
+        <mat-label>USCIS Receipt Number</mat-label>
+        <input matInput name="receiptNumber" [(ngModel)]="receiptNumber">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" name="password" [(ngModel)]="password">
+    </mat-form-field>
+
+    <button mat-flat-button type="button" (click)="schedule()" color="primary">Submit</button>
+</form>
